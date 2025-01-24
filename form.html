@@ -6,7 +6,7 @@
     <title>Document</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <link
       rel="stylesheet"
@@ -16,86 +16,128 @@
   </head>
 
   <body>
-    <div class="page-image">
-      <img src="./assets/Component 1.svg" alt="image" />
-      <h1>Learn highly sought after skills without hassle.</h1>
-      <div class="media-icons">
-        <a href="https://twitter.com/altschoolafrica" class="fa fa-twitter"></a>
-        <a
-          href="https://www.instagram.com/altschoolafrica"
-          class="fa fa-instagram"
-        ></a>
-        <a
-          href="https://www.facebook.com/AltSchoolAfrica"
-          class="fa fa-facebook"
-        ></a>
-        <a
-          href="https://www.linkedin.com/school/altschool-africa"
-          class="fa fa-linkedin"
-        ></a>
+    <main class="page-content">
+      <div class="page-image">
+        <img src="./assets/Component 1.svg" alt="image" />
+        <h1>Learn highly sought after skills without hassle.</h1>
+        <div class="media-icons">
+          <a
+            href="https://twitter.com/altschoolafrica"
+            class="fa fa-twitter"
+          ></a>
+          <a
+            href="https://www.instagram.com/altschoolafrica"
+            class="fa fa-instagram"
+          ></a>
+          <a
+            href="https://www.facebook.com/AltSchoolAfrica"
+            class="fa fa-facebook"
+          ></a>
+          <a
+            href="https://www.linkedin.com/school/altschool-africa"
+            class="fa fa-linkedin"
+          ></a>
+        </div>
+        <footer>2025 &#169; AltSchool Africa. All rights reserved.</footer>
       </div>
-      <footer>2025 &#169; AltSchool Africa. All rights reserved.</footer>
-    </div>
 
-    <div class="form-container">
-      <p id="top-p">
-        Already an AltScholar?
-        <a href="https://portal.altschoolafrica.com/auth/signin">Sign In!</a>
-      </p>
-      <h1>Signup</h1>
-      <p id="topp-p">Take the next steps to apply at AltSchool Africa.</p>
-      <form action="">
-        <div class="form-content">
-          <div class="section-1">
-            <label for="first-name">First Name</label><br />
-            <input type="text" placeholder="First Name" id="first-name" /><br />
-            <label for="e-mail">Email</label><br />
-            <input type="email" placeholder="Email" id="e-mail" /><br />
-            <label for="date-of-birth">Date of Birth</label><br />
-            <input type="date" id="date-of-birth" /><br />
-            <label for="country">Country of Residence</label><br />
-            <input type="text" placeholder="Country of Residence" id="country" /><br />
-            <label for="password">Password</label><br />
-            <div class="password-container">
-            <input type="password" placeholder="Password" id="password" />
-            <i class="far fa-eye" id="togglePassword"></i>
+      <div class="form-container">
+        <p id="top-p">
+          Already an AltScholar?
+          <a href="https://portal.altschoolafrica.com/auth/signin">Sign In!</a>
+        </p>
+        <h1>Signup</h1>
+        <p id="topp-p">Take the next steps to apply at AltSchool Africa.</p>
+        <form action="">
+          <div class="form-content">
+            <div class="section-1">
+              <div class="form-spacing">
+                <label for="first-name">First Name</label>
+                <input type="text" placeholder="First Name" id="first-name" />
+              </div>
+              <div class="form-spacing">
+                <label for="e-mail">Email</label>
+                <input type="email" placeholder="Email" id="e-mail" />
+              </div>
+              <div class="form-spacing">
+                <label for="date-of-birth">Date of Birth</label>
+                <input type="date" id="date-of-birth" />
+              </div>
+              <div class="form-spacing">
+                <label for="country">Country of Residence</label>
+                <input
+                  type="text"
+                  placeholder="Country of Residence"
+                  id="country"
+                />
+              </div>
+              <div class="form-spacing">
+                <label for="password">Password</label>
+                <div class="password-container">
+                  <input type="password" placeholder="Password" id="password" />
+                  <i id="eye-icon" class="fas fa-eye eye-icon"></i>
+                </div>
+              </div>
             </div>
-            <!-- style="position: absolute" -->
+
+            <div class="section-2">
+              <div class="form-spacing">
+                <label for="last-name">Last Name</label>
+                <input type="text" placeholder="Last Name" id="last-name" />
+              </div>
+              <div class="form-spacing">
+                <label for="gender">Gender</label>
+                <select name="Gender" id="gender">
+                  <option value="1">Select gender</option>
+                  <option value="2">Male</option>
+                  <option value="3">Female</option>
+                </select>
+              </div>
+              <div class="form-spacing">
+                <label for="number">Phone Number</label>
+                <input type="text" placeholder="Phone Number" id="number" />
+              </div>
+              <div class="form-spacing">
+                <label for="state">State of Residence</label>
+                <input
+                  type="text"
+                  placeholder="State of Residence"
+                  id="state"
+                />
+              </div>
+              <div class="form-spacing">
+                <label for="confirm-password">Confirm Password</label>
+                <div class="password-container">
+                  <input
+                    type="password"
+                    placeholder="Confirm Password"
+                    id="password"
+                  />
+                  <i id="eye-icon" class="fas fa-eye eye-icon"></i>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="section-2">
-            <label for="last-name">Last Name</label><br />
-            <input type="text" placeholder="Last Name" id="last-name" /><br />
-            <label for="gender">Gender</label><br />
-            <select name="Gender" id="gender">
-              <option value="1">Select gender</option>
-              <option value="2">Male</option>
-              <option value="3">Female</option></select
-            ><br />
-            <label for="number">Phone Number</label><br />
-            <input type="text" placeholder="Phone Number" id="number" /><br />
-            <label for="state">State of Residence</label><br />
-            <input type="text" placeholder="State of Residence" id="state" /><br />
-            <label for="confirm-password">Confirm Password</label><br />
-            <div class="password-container">
-            <input type="password" placeholder="Confirm Password" id="confirm-password" />
-            <i class="far fa-eye" id="togglePassword"></i>
-            </div>
-            <!-- style="position: absolute" -->
-            </div>
-        </div>
-        <label>How did you hear about us?</label><br />
-        <input type="text" placeholder="Optional: Let us know how you found us" id="about-us" />
-        <p>
-          By clicking continue, I agree to
-          <a href="https://portal.altschoolafrica.com">Terms of Use</a> and
-          acknowledge that I have read the
-          <a href="https://portal.altschoolafrica.com">Privacy Policy</a>.
-        </p>
-        <button type="submit" class="btn btn-primary">
-          Signup <i class="fas fa-angle-right"></i>
-        </button>
-      </form>
-    </div>
+          <div class="form-spacing">
+            <label>How did you hear about us?</label>
+            <input
+              type="text"
+              placeholder="Optional: Let us know how you found us"
+              id="about-us"
+            />
+          </div>
+          <p>
+            By clicking continue, I agree to
+            <a href="https://portal.altschoolafrica.com">Terms of Use</a> and
+            acknowledge that I have read the
+            <a href="https://portal.altschoolafrica.com">Privacy Policy</a>.
+          </p>
+          <button type="submit" class="btn btn-primary">
+            Signup <i class="fas fa-angle-right"></i>
+          </button>
+        </form>
+      </div>
+    </main>
   </body>
 </html>
