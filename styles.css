@@ -1,0 +1,77 @@
+
+body {
+    display: flex;
+    /* height: 100%; */
+    min-height: 100vh;
+
+}
+
+.page-image {
+    border: 2px solid;
+}
+
+.form-container {
+    border: 2px solid;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+}
+
+.media-icons {
+    margin: auto;
+}
+.form-content {
+    display: flex;
+}
+
+#top-p {
+    text-align: right;
+    font-weight: bold;
+}
+
+#topp-p {
+    color: #75869d;
+}
+
+input, select {
+    width: 100%;
+    /* display: inline-block; */
+    box-sizing: border-box;
+    height: 35px;
+    padding-left: 12px;
+}
+
+
+.password-container {
+    position: relative;
+}
+
+.far fa-eye {
+    font-size: 5px; /*Adjust size as needed */
+    cursor: pointer; /* Indicate clickable state */
+    position: absolute; /*Position next to password field*/
+    /* right: 15px; */
+    /* right: 10px; Adjust right margin as needed */
+    top: 50%; 
+    /* transform: translateY(-50%); Center vertically */
+}
+
+
+button {
+    width: 100%;
+    margin: 0;
+}
+
+.section-1 {
+    /* border: 2px solid; */
+    width: 50%;
+    /* padding-right: 15px; */
+}
+
+.section-2 {
+    width: 50%;
+    /* padding-left: 15px; */
+}

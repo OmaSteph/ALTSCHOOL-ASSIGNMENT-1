@@ -12,85 +12,80 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <div class="page-image">
       <img src="./assets/Component 1.svg" alt="image" />
       <h1>Learn highly sought after skills without hassle.</h1>
-      <a href="https://twitter.com/altschoolafrica" class="fa fa-twitter"></a>
-      <a
-        href="https://www.instagram.com/altschoolafrica"
-        class="fa fa-instagram"
-      ></a>
-      <a
-        href="https://www.facebook.com/AltSchoolAfrica"
-        class="fa fa-facebook"
-      ></a>
-      <a
-        href="https://www.linkedin.com/school/altschool-africa"
-        class="fa fa-linkedin"
-      ></a>
+      <div class="media-icons">
+        <a href="https://twitter.com/altschoolafrica" class="fa fa-twitter"></a>
+        <a
+          href="https://www.instagram.com/altschoolafrica"
+          class="fa fa-instagram"
+        ></a>
+        <a
+          href="https://www.facebook.com/AltSchoolAfrica"
+          class="fa fa-facebook"
+        ></a>
+        <a
+          href="https://www.linkedin.com/school/altschool-africa"
+          class="fa fa-linkedin"
+        ></a>
+      </div>
       <footer>2025 &#169; AltSchool Africa. All rights reserved.</footer>
     </div>
 
     <div class="form-container">
-      <p>
+      <p id="top-p">
         Already an AltScholar?
         <a href="https://portal.altschoolafrica.com/auth/signin">Sign In!</a>
       </p>
       <h1>Signup</h1>
-      <p>Take the next steps to apply at AltSchool Africa.</p>
+      <p id="topp-p">Take the next steps to apply at AltSchool Africa.</p>
       <form action="">
-        <section>
-          <label for="first-name">First Name</label>
-          <input type="text" placeholder="First Name" id="first-name" />
-          <label for="e-mail">Email</label>
-          <input type="email" placeholder="Email" id="e-mail" />
-          <label for="date-of-birth">Date of Birth</label>
-          <input type="date" id="date-of-birth" />
-          <label for="country">Country of Residence</label>
-          <input type="text" placeholder="Country of Residence" id="country" />
-          <label for="password">Password</label>
-          <input type="password" placeholder="Password" id="password" />
-          <i
-            class="far fa-eye"
-            id="togglePassword"
-            style="margin-left: -30px; cursor: pointer"
-          ></i>
-        </section>
+        <div class="form-content">
+          <div class="section-1">
+            <label for="first-name">First Name</label><br />
+            <input type="text" placeholder="First Name" id="first-name" /><br />
+            <label for="e-mail">Email</label><br />
+            <input type="email" placeholder="Email" id="e-mail" /><br />
+            <label for="date-of-birth">Date of Birth</label><br />
+            <input type="date" id="date-of-birth" /><br />
+            <label for="country">Country of Residence</label><br />
+            <input type="text" placeholder="Country of Residence" id="country" /><br />
+            <label for="password">Password</label><br />
+            <div class="password-container">
+            <input type="password" placeholder="Password" id="password" />
+            <i class="far fa-eye" id="togglePassword"></i>
+            </div>
+            <!-- style="position: absolute" -->
+          </div>
 
-        <section>
-          <label for="last-name">Last Name</label>
-          <input type="text" placeholder="Last Name" id="last-name" />
-          <label for="gender">Gender</label>
-          <select name="Gender" id="gender">
-            <option value="1">Select gender</option>
-            <option value="2">Male</option>
-            <option value="3">Female</option>
-          </select>
-          <label for="number">Phone Number</label>
-          <input type="text" placeholder="Phone Number" id="number" />
-          <label for="state">State of Residence</label>
-          <input type="text" placeholder="State of Residence" id="state" />
-          <label for="confirm-password">Confirm Password</label>
-          <input
-            type="password"
-            placeholder="Confirm Password"
-            id="confirm-password"
-          />
-          <i
-            class="far fa-eye"
-            id="togglePassword"
-            style="margin-left: -30px; cursor: pointer"
-          ></i>
-        </section>
-        <label>How did you hear about us?</label>
-        <input
-          type="text"
-          placeholder="Optional: Let us know how you found us"
-          id="about-us"
-        />
+          <div class="section-2">
+            <label for="last-name">Last Name</label><br />
+            <input type="text" placeholder="Last Name" id="last-name" /><br />
+            <label for="gender">Gender</label><br />
+            <select name="Gender" id="gender">
+              <option value="1">Select gender</option>
+              <option value="2">Male</option>
+              <option value="3">Female</option></select
+            ><br />
+            <label for="number">Phone Number</label><br />
+            <input type="text" placeholder="Phone Number" id="number" /><br />
+            <label for="state">State of Residence</label><br />
+            <input type="text" placeholder="State of Residence" id="state" /><br />
+            <label for="confirm-password">Confirm Password</label><br />
+            <div class="password-container">
+            <input type="password" placeholder="Confirm Password" id="confirm-password" />
+            <i class="far fa-eye" id="togglePassword"></i>
+            </div>
+            <!-- style="position: absolute" -->
+            </div>
+        </div>
+        <label>How did you hear about us?</label><br />
+        <input type="text" placeholder="Optional: Let us know how you found us" id="about-us" />
         <p>
           By clicking continue, I agree to
           <a href="https://portal.altschoolafrica.com">Terms of Use</a> and
